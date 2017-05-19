@@ -1,13 +1,23 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">My App</md-toolbar>
+
+<md-sidenav-container class="example-container">
+
+  <md-sidenav #sidenav class="example-sidenav">
+    Jolly good!
+  </md-sidenav>
+
+  <button md-button (click)="openDialog()">Flat button</button>
+  <button md-raised-button (click)="sidenav.open()">Raised button</button>
+  <button md-fab><md-icon>check</md-icon></button>
+  <button md-mini-fab><md-icon>check</md-icon></button>
 
 
-<button md-button (click)="openDialog()">Flat button</button>
-<button md-raised-button>Raised button</button>
-<button md-fab><md-icon>check</md-icon></button>
-<button md-mini-fab><md-icon>check</md-icon></button>
+  <md-checkbox>Checked</md-checkbox>
+  <md-checkbox>Indeterminate</md-checkbox>
+
+</md-sidenav-container>
 
 
-<md-checkbox>Checked</md-checkbox>
-<md-checkbox>Indeterminate</md-checkbox>
+
+
+

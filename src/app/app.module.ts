@@ -6,7 +6,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule, MdDialogModule} from '@angular/material';
+import {
+  MdButtonModule,
+  MdCheckboxModule,
+  MdDialogModule,
+  MdToolbarModule,
+  MdSidenavModule
+} from '@angular/material';
 import { DialogExampleComponent } from './dialog-example/dialog-example.component';
 
 
@@ -24,7 +30,9 @@ import { DialogExampleComponent } from './dialog-example/dialog-example.componen
 
     MdButtonModule,
     MdCheckboxModule,
-    MdDialogModule
+    MdDialogModule,
+    MdToolbarModule,
+    MdSidenavModule
   ],
   entryComponents: [
     DialogExampleComponent
