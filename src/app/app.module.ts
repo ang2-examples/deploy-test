@@ -6,11 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+import {MdButtonModule, MdCheckboxModule, MdDialogModule} from '@angular/material';
+import { DialogExampleComponent } from './dialog-example/dialog-example.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DialogExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,11 @@ import {MdButtonModule, MdCheckboxModule} from '@angular/material';
     BrowserAnimationsModule,
 
     MdButtonModule,
-    MdCheckboxModule
+    MdCheckboxModule,
+    MdDialogModule
+  ],
+  entryComponents: [
+    DialogExampleComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
